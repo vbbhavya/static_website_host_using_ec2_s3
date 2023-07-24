@@ -12,12 +12,19 @@ This is a Static website hosting using aws ec2 -and s3 bucket
  and run following commands
 
  sudo su
+ 
 yum update -y
+
 yum install httpd -y
+
 cd /var/www/html
+
 wget s3_Object_URL
+
 unzip name.zip
+
 mv SubFolder_Name/* .
+
 service httpd start
 
 Finally, copy public IP of your instance and paste it in the web browser
